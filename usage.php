@@ -16,7 +16,7 @@ try {
 
     $natesaobiti = $output->transform('NA');
     echo 'ნათესაობითი ფორმა: ' . $natesaobiti . PHP_EOL;
-    // მიცემითი ფორმა: მექვაბიშვილის
+    // ნათესაობითი ფორმა: მექვაბიშვილის
 
 } catch (InvalidArgumentException $e) {
     echo 'Error: ' . $e->getMessage() . PHP_EOL;
