@@ -6,16 +6,16 @@ try {
 
     $output = new GeoLastname('მექვაბიშვილი');
 
-    $mothkhrobiti = $output->transform('MO');
-    echo 'მოთხრობითი ფორმა: ' . $mothkhrobiti . PHP_EOL;
+    $narrative = $output->transform('MO');
+    echo 'მოთხრობითი ფორმა: ' . $narrative . PHP_EOL;
     // მოთხრობითი ფორმა: მექვაბიშვილმა
 
-    $mitsemiti = $output->transform('MI');
-    echo 'მიცემითი ფორმა: ' . $mitsemiti . PHP_EOL; 
+    $dative = $output->transform('MI');
+    echo 'მიცემითი ფორმა: ' . $dative . PHP_EOL; 
     // მიცემითი ფორმა: მექვაბიშვილს
 
-    $natesaobiti = $output->transform('NA');
-    echo 'ნათესაობითი ფორმა: ' . $natesaobiti . PHP_EOL;
+    $genitive = $output->transform('NA');
+    echo 'ნათესაობითი ფორმა: ' . $genitive . PHP_EOL;
     // ნათესაობითი ფორმა: მექვაბიშვილის
 
 } catch (InvalidArgumentException $e) {
